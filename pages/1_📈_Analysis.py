@@ -11,6 +11,7 @@ import datetime as dt
 st.set_page_config(
     page_title="Analysis",
     page_icon="📈",
+    layout="wide"
 )
 
 st.write("# 📈 Car Park Analysis")
