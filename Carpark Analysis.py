@@ -13,6 +13,7 @@ mapbox_access_token = 'pk.eyJ1IjoibGF6ZmlzaGluZyIsImEiOiJja2wzY2xoODgxaWoyMnJwbH
 st.set_page_config(
     page_title="Carpark Analysis",
     page_icon="🚗",
+    layout="wide
 )
 
 st.write("# 🚗 HDB Car Park Analysis")
