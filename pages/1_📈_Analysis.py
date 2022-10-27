@@ -3,13 +3,10 @@ import json
 import pandas as pd
 import geopandas as gpd
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import datetime as dt
-from calendar import monthrange
 
 st.set_page_config(
     page_title="Analysis",
