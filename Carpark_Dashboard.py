@@ -8,7 +8,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import datetime as dt
 from calendar import monthrange
-mapbox_access_token = 'pk.eyJ1IjoibGF6ZmlzaGluZyIsImEiOiJja2wzY2xoODgxaWoyMnJwbHdraXkzdjRhIn0.0dz4Ra_uLwB7SM1LAIDebw'
 
 st.set_page_config(
     page_title="Carpark Dashboard",
@@ -72,7 +71,7 @@ fig.update_layout(
     showlegend=False,
     height=750,
     mapbox=dict(
-        accesstoken=mapbox_access_token,
+        accesstoken=st.secrets["mapbox_access_token"],
         bearing=0,
         center=dict(
             lat=1.3521,
