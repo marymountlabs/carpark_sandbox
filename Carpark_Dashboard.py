@@ -11,12 +11,12 @@ from calendar import monthrange
 mapbox_access_token = 'pk.eyJ1IjoibGF6ZmlzaGluZyIsImEiOiJja2wzY2xoODgxaWoyMnJwbHdraXkzdjRhIn0.0dz4Ra_uLwB7SM1LAIDebw'
 
 st.set_page_config(
-    page_title="Carpark Analysis",
+    page_title="Carpark Dashboard",
     page_icon="🚗",
     layout="wide"
 )
 
-st.write("# 🚗 HDB Car Park Analysis")
+st.write("# 🚗 HDB Car Park Dashboard")
 st.write("Car park data extracted for August 2022")
 
 # preload data
