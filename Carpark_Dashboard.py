@@ -3,11 +3,9 @@ import json
 import pandas as pd
 import geopandas as gpd
 import numpy as np
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 import datetime as dt
-from calendar import monthrange
 
 st.set_page_config(
     page_title="Carpark Dashboard",
