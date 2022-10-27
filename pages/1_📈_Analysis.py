@@ -10,7 +10,6 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import datetime as dt
 from calendar import monthrange
-mapbox_access_token = 'pk.eyJ1IjoibGF6ZmlzaGluZyIsImEiOiJja2wzY2xoODgxaWoyMnJwbHdraXkzdjRhIn0.0dz4Ra_uLwB7SM1LAIDebw'
 
 st.set_page_config(
     page_title="Analysis",
@@ -73,7 +72,7 @@ if type == 'Car Park Availability':
             height=400,
             margin=dict(l=0, r=0, t=0, b=0),
             mapbox=dict(
-                accesstoken=mapbox_access_token,
+                accesstoken=st.secrets["mapbox_access_token"],
                 bearing=0,
                 center=dict(lat=lat, lon=lon),
                 pitch=0,
@@ -160,7 +159,7 @@ if type == 'Clustering Analysis':
             showlegend=True,
             height=750,
             mapbox=dict(
-                accesstoken=mapbox_access_token,
+                accesstoken=st.secrets["mapbox_access_token"],
                 bearing=0,
                 center=dict(lat=1.3521, lon=103.8198),
                 pitch=0,
